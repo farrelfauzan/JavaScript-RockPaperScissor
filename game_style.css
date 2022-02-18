@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+html  {
+
+    width: 100vw;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+
+}
+
+/* HEADER */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #9c835f;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* CONTAINER */
+
+.container-utama{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.container-utama a{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container-utama h3{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+/* FLEXBOX AREA PLAYER*/
+
+.main-area{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.area-player h2{
+    text-align: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+.area-player ul{
+    padding: 0;
+}
+
+.area-player ul li{
+    margin-top: 50px;
+    list-style: none;
+}
+
+.area-player ul li img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.box.playerImage {
+	border-radius: 20%;
+}
+
+.player.batu{
+    margin-left: 10px;
+}
+
+.player.kertas{
+    margin-left: 20px;
+}
+
+.player.gunting{
+    margin-left: 20px;
+}
+
+/* FLEXBOX AREA COMPUTER */
+
+.com-area h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.com-area ul{
+    padding: 0;
+}
+
+.com-area ul li{
+    list-style: none;
+    margin-top: 50px;
+}
+
+.com-area ul li img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.com-area ul li img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.box.compImage {
+	border-radius: 20%;
+}
+
+.gunting-com{
+    margin-left: 20px;
+}
+
+.kertas-com{
+    margin-left: 20px;
+}
+
+.batu-com{
+    margin-left: 10px;
+}
+
+.VS {
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.VS h1{
+    font-size: 150px;
+}
+
+
+.VS .result {
+	position: absolute;
+	z-index: 1;
+	transform: rotate(-30deg);
+	margin-left: -30px;
+}
+
+.VS .result h5{
+	display: table-cell;
+	vertical-align: middle;
+	background-color: #4C9654;
+    text-align: center;
+	border-radius: 5%;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #ffffff;
+	height: 55px;
+	padding: 10px 40px;
+}
+
+/* REFRESH BUTTON */
+
+.refresh{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.refresh-btn{
+    display: flex;
+    justify-content: center;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 576px) {
+    .main-area{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .area-player h2{
+        font-size: 20px;
+    }
+
+   .area-player ul{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       margin-right: 50px;
+       margin-left: 50px;
+   }
+    .area-player ul li img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .VS{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+        margin: 0;
+        align-items: center;
+    }
+
+    .VS h1{
+        font-size: 60px;
+    }
+
+    .com-area h2{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+   .com-area ul{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       margin-right: 50px;
+       margin-left: 50px;
+   }
+    .com-area ul li img{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0;
+    }
+
+    .refresh-btn {
+        margin-top: 20px;
+    }
+
+    .refresh {
+        width: 50px;
+        height: 50px;
+    }
+
+    .VS .result h5{
+        font-size: 25px;
+    }
+
+    .box.playerImage {
+        border-radius: 20%;
+    }
+    
+    .player.batu{
+        margin-left: 0px;
+    }
+    
+    .player.kertas{
+        margin-left: 0px;
+    }
+    
+    .player.gunting{
+        margin-left: 0px;
+    }
+
+    .gunting-com{
+        margin-left: 0px;
+    }
+    
+    .kertas-com{
+        margin-left: 0px;
+    }
+    
+    .batu-com{
+        margin-left: 0px;
+    }
+
+} 
